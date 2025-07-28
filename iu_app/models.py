@@ -12,4 +12,4 @@ class Kiosk(models.Model):
 
 
 class QrReader(models.Model):
-    kiosk = models.ManyToManyField(Kiosk)
+    kiosks = models.ManyToManyField(Kiosk, related_name='qr_readers')
